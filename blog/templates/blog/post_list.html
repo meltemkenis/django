@@ -1,0 +1,174 @@
+{% load static %}
+
+
+<html>
+    <head>
+        <title>Meltem Kenis</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+    	<br/>
+       
+
+    	<div class="content container">
+    		<div class="row">
+        		<div class="col-md-12">
+           			{% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        <p>Published date: {{ post.published_date }}</p>
+                    </div>
+                    <h1>{{ post.title }}</h1>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            		{% endfor %}
+        		</div>
+    		</div>
+		</div>
+
+
+		<hr>
+    	
+        <h2>Education:</h2>
+        <div class="row">
+
+        <div class="col-md-6"> <h3> Graduate: </h3>
+        <p>Hacettepe University, Ankara/ Turkey</p>
+        <b> Year:</b> <span>2018-2020 </span>
+        <br/>
+        <b> Field:</b> <span> Software Engineering </span>
+        <br/>
+        <b> GPA: </b> <span> 3.70/ 4.00</span>
+        </div>
+
+        <div class="col-md-6">
+        <h3> Undergraduate: </h3>
+        <p> Bogazici University, Istanbul/ Turkey</p>
+        <b> Year:</b> <span>2010-2016 </span>
+        <br/>
+        <b> Field:</b> <span> Physics (Options: Astrophysics & Management)</span>
+    	</div> </div>
+        <br/>
+        <br/>
+
+        <hr>
+
+        <h2>Experiences:</h2>
+
+        <h3> Junior Software Engineer </h3>
+        <span> <b>Firm:</b> Ekodenge, Ankara/ Turkey</span>
+        <br/>
+        <b> Year:</b> <span> Nov 2018- </span>
+        <br/>
+        <b> Responsibilities:</b>
+        <p> <ul><span>To make front-end development of the company’s web page for project and employee management and apply material design to this site,</span></ul>
+        <ul><span>Optimization of Ekobina which aims to
+		provide environment friendly, energy and
+		cost efficient building energy management with embedded cloud computing capabilities, new generation sensor network and low power communication infrastructure,</span></ul>
+        <ul><span>Designing a web page for Hatay municipality through WordPress to calculate carbon footprint,</span></ul>
+        <ul><span>IT Project management and SCRUM Master.</span></ul></p>
+
+
+        <h3> Assistant </h3>
+        <span> <b>Firm:</b> Bogazici University Corporate Communication Department, Istanbul/Turkey</span>
+        <br/>
+        <b> Year:</b> <span> September 2016 - May 2017</span>
+        <br/>
+        <b> Responsibilities:</b>
+        <p> <ul><span>Planning and organizing national and international events. </span></ul></p>
+
+
+        <h3> Producer </h3>
+        <span> <b>Firm:</b> Bogazici University Women’s Studies Club, Istanbul/ Turkey</span>
+        <br/>
+        <b> Year:</b> <span> March 2016 </span>
+        <br/>
+        <b> Responsibilities:</b>
+        <p> <ul><span>Producer of documentary film: Dünya Yerinden Oynar which is about sexual harassment in universities.</span></ul>
+    	</p>
+
+
+        <h3> Project Coordinator </h3>
+        <span> <b>Firm:</b> Bogazici University Women’s Studies Club, Istanbul/ Turkey</span>
+        <br/>
+        <b> Year:</b> <span> August 2015 - March 2016</span>
+        <br/>
+        <b> Responsibilities:</b>
+        <p> <ul><span>Coordinating the project “Sexual Harassment Awareness Month” in Bogazici University. </span></ul></p>
+        <p> <ul><span>Organizing a social media campaign and events including forum, film screenings, panels and talks.</span></ul></p>
+
+
+        <h3> Volunteer </h3>
+        <span> <b>Firm:</b> Jeunesse et Reconstruction, Toulouse/ France </span>
+        <br/>
+        <b> Year:</b> <span> August 2012 - September 2012</span>
+        <br/>
+        <b> Responsibilities:</b>
+        <p> <ul><span>Participant of international reconstruction project of a historical monument in Toulouse, France. </span></ul></p>
+        <p> <ul><span>Working with ten other volunteers from different countries under supervision of a professional.</span></ul></p>
+        <br/>
+        <br/>
+        <hr>
+
+    	<div class="row">
+        	<div class="col-md-6"> <h2>Certifications:</h2>
+        		<h3>deeplearning.ai (Online)</h3><b>Date: </b> October 2019 <p><b>Title: </b>Introduction to TensorFlow for AI, ML and DL, Online</p>
+        		<h3>IBM (Online)</h3><b>Date: </b> October 2019 <p><b>Title: </b>Databases and SQL for Data Science, Online</p>
+        		<h3>IBM (Online)</h3><b>Date: </b> Semptember 2019 <p><b>Title: </b>Data Analysis with Python</p>
+        		<h3>Kodluyoruz Akademi, Ankara</h3><b>Date: </b> August 2019 <p><b>Title: </b>Python and Machine Learning</p>
+        		<h3>Kodluyoruz Akademi, Ankara</h3><b>Date: </b> May 2018 <p><b>Title: </b>Git & Github</p> </div>
+        
+        	<div class="col-md-6"><h2>Skills:</h2>
+        
+       	 		<h3>Language:</h3>
+        		<li>Turkish, <b>Level: </b>Native Language</p></li>
+        		<li>English, <b>Level: </b>Advanced</p></li>
+        
+        		<h3>Programing Languages:</h3>
+        		<li>Java, <b>Level: </b>Beginner</p></li>
+        		<li>Swift, <b>Level: </b>Beginner</p></li>
+        		<li>Python, <b>Level: </b>Intermediate</p></li>
+        		<li>Javascript, <b>Level: </b>Intermediate</p></li>
+        		<li>C, <b>Level: </b>Intermediate</p></li>
+        
+        		<h3>Others:</h3>
+        		<li>Photoshop, <b>Level: </b>Intermediate</p></li>
+        		<li>SQL, <b>Level: </b>Intermediate</p></li>
+        		<li>Wordpress, <b>Level: </b>Advanced</p></li>
+        		<li>HTML5, <b>Level: </b>Advanced</p></li>
+        		<li>CSS, <b>Level: </b>Advanced</p></li>
+        		<li>Bootstrap4, <b>Level: </b>Advanced</p></li>
+        		<li>Git, <b>Level: </b>Advanced</p></li> </div> 
+    	</div>
+    	<hr>
+
+    	<h2>Memberships:</h2>
+
+        <h3> President </h3>
+        <span>  Bogazici University Women Studies Club (BUKAK), Istanbul/ Turkey</span>
+        <br/>
+        <b> Date:</b> <span> 2012-2014 </span>
+        <br/>
+        <h3> Official Member </h3>
+        <span>  Bogaziçi University Student Clubs Committee (as representative of Boğaziçi University Women’s Studies Club), Istanbul/ Turkey</span>
+        <br/>
+        <b> Date:</b> <span> 2011-2014 </span>
+        <br/>
+        <h3>Member </h3>
+        <span>  Bogazici University Folklore Club (BUFK), Istanbul/ Turkey</span>
+        <br/>
+        <b> Date:</b> <span> 2011-2012 </span>
+
+        <hr>
+
+        <h2>Contact:</h2>
+        <a href="https://www.linkedin.com/in/meltem-kenis/"><img src="https://img.icons8.com/material/24/000000/linkedin--v1.png"></a>
+        <br/>
+        
+    </body>
+</html>
